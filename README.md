@@ -28,52 +28,70 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-Micro Front End Steps
+## Micro Front End Steps
 
 
-Step 1:
-Create workspce for MFE
+## Step 1: Create workspce for MFE
+
 ng new mainapplication --create-application="false"
 
-Step 2: create project folder
+## Step 2: create project folder
 
 
-Step 3: create  shell project inside projects folder and follow the same for other projects 
+## Step 3: create  shell project inside projects folder and follow the same for other projects 
+
 ng g application shell --routing=true --style=scss
+
 ng g application jobs --routing=true --style=scss
+
 ng g application profile --routing=true --style=scss
+
 ng g application setting --routing=true --style=scss
 
 
-step 4:
+## step 4: Install Module federation
 
 npm i @angular-architects/module-federation
 
-step 5: add module-federation for each project
+## step 5: add module-federation for each project
 
 ng add @angular-architects/module-federation --project=shell    8200
+
 ng add @angular-architects/module-federation --project=jobs    8300
+
 ng add @angular-architects/module-federation --project=profile    8400
+
 ng add @angular-architects/module-federation --project=setting    8500
 
 
-step 6 : addfeature modules for each porject
+## step 6 : addfeature modules for each porject
 
 ng g m shell-feature --routing
+
 ng g m jobs-feature --routing
+
 ng g m profile-feature --routing
+
 ng g m setting-feature --routing
 
 
-step 7 : 	create component for each projects
+## step 7: create component for each projects
+
 ng g c dashboard
+
 ng g c search-jobs
+
 ng g c profile
+
 ng g c setting
 
 
-step 8 
+## step 8:  Run applications
+
 ng serve shell
+
 ng serve jobs
+
 ng serve profile
+
 ng serve setting
