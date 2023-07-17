@@ -1,0 +1,21 @@
+{
+  "webpackconfig":{
+    "jobs":{
+      "type":"module",
+      "remoteEntry":"http://localhost:8300/remoteEntry.js",
+      "exposedModule":"./Module"
+    },
+    "profile":{
+      "type":"module",
+      "remoteEntry":"http://localhost:8400/remoteEntry.js",
+      "exposedModule":"./Module"
+    },
+    "setting":{
+      "type":"module",
+      "remoteEntry":"http://localhost:8500/remoteEntry.js",
+      "exposedModule":"./Module"
+    }
+  },
+  "idleTime":18,
+  "idleTimeOut":30
+}
